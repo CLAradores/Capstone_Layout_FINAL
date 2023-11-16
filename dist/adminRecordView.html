@@ -5,6 +5,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/cc433e9725.js"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
@@ -132,7 +136,7 @@
     >
       <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
         <ul class="space-y-2 font-medium">
-          <li class="mt-2 border-b pb-3">
+          <li>
             <a
               href="#"
               class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
@@ -173,7 +177,6 @@
               <span class="flex-1 ms-3 whitespace-nowrap">Events</span>
             </a>
           </li>
-
           <li>
             <a
               href="#"
@@ -190,7 +193,7 @@
                   d="m17.418 3.623-.018-.008a6.713 6.713 0 0 0-2.4-.569V2h1a1 1 0 1 0 0-2h-2a1 1 0 0 0-1 1v2H9.89A6.977 6.977 0 0 1 12 8v5h-2V8A5 5 0 1 0 0 8v6a1 1 0 0 0 1 1h8v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h6a1 1 0 0 0 1-1V8a5 5 0 0 0-2.582-4.377ZM6 12H4a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Z"
                 />
               </svg>
-              <span class="flex-1 ms-3 whitespace-nowrap">Patient Records</span>
+              <span class="flex-1 ms-3 whitespace-nowrap">Inbox</span>
             </a>
           </li>
           <li>
@@ -209,7 +212,7 @@
                   d="M14 2a3.963 3.963 0 0 0-1.4.267 6.439 6.439 0 0 1-1.331 6.638A4 4 0 1 0 14 2Zm1 9h-1.264A6.957 6.957 0 0 1 15 15v2a2.97 2.97 0 0 1-.184 1H19a1 1 0 0 0 1-1v-1a5.006 5.006 0 0 0-5-5ZM6.5 9a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9ZM8 10H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5Z"
                 />
               </svg>
-              <span class="flex-1 ms-3 whitespace-nowrap">Add Record</span>
+              <span class="flex-1 ms-3 whitespace-nowrap">Users</span>
             </a>
           </li>
           <li>
@@ -228,7 +231,7 @@
                   d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z"
                 />
               </svg>
-              <span class="flex-1 ms-3 whitespace-nowrap">Add User</span>
+              <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
             </a>
           </li>
           <li>
@@ -251,7 +254,7 @@
                   d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"
                 />
               </svg>
-              <span class="flex-1 ms-3 whitespace-nowrap">Post a Blog</span>
+              <span class="flex-1 ms-3 whitespace-nowrap">Sign In</span>
             </a>
           </li>
           <li>
@@ -276,25 +279,130 @@
                   d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"
                 />
               </svg>
-              <span class="flex-1 ms-3 whitespace-nowrap">Sign Out</span>
+              <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
             </a>
           </li>
         </ul>
       </div>
     </aside>
 
-    <div class="p-4 sm:ml-64">
-      <div>
-        <div class="flex justify-center bg-black h-96 mt-20"></div>
-        <div class="flex mt-20 justify-center">
-          <div class="bg-black h-20 w-72 mx-10 my-5"></div>
-          <div class="bg-black h-20 w-72 mx-10 my-5"></div>
-          <div class="bg-black h-20 w-72 mx-10 my-5"></div>
+    <div class="p-4 sm:ml-64 bg-slate-100">
+      <div class="max-w-6xl max-h-[1254.803 px] mt-20 bg-white p-8">
+        <!-- <div class="flex justify-center items-center">
+          <img class="w-28" src="../img/eventBarangayLOGO.png" alt="logo" />
+        </div> -->
+        <div class="mt-10">
+          <h2 class="text-2xl font-bold text-green-600">
+            Patient Medical Record
+          </h2>
+          <div class="p-5 bg-slate-300 flex lg:space-x-48 mt-3">
+            <div>
+              <div class="w-">
+                <h3 class="text-green-600 font-semibold">
+                  Patient Information
+                </h3>
+                <p class="text-sm font-medium">Charles Lester Radores</p>
+              </div>
+              <div class="mt-5">
+                <p class="text-sm font-medium">09123472894</p>
+              </div>
+              <div class="mt-5">
+                <p class="text-sm font-medium">San Vicente BLK 11 LOT 1</p>
+                <p class="text-sm font-medium">Pantok, SunnyValle</p>
+                <p class="text-sm font-medium">Alaska</p>
+              </div>
+            </div>
+            <div>
+              <div class="mt-5">
+                <h3 class="text-green-600 font-semibold">Birth Date</h3>
+                <p class="text-sm font-medium">21/4/2023</p>
+              </div>
+              <div class="mt-5">
+                <h3 class="text-green-600 font-semibold">Weight:</h3>
+                <p class="text-sm font-medium">62.42 kg</p>
+              </div>
+              <div class="mt-5">
+                <h3 class="text-green-600 font-semibold">Height:</h3>
+                <p class="text-sm font-medium">157 cm</p>
+              </div>
+            </div>
+          </div>
+          <!-- caseas -->
+          <h3
+            class="text-xl font-semibold text-red-500 mt-5 pb-3 border-b border-red-500"
+          >
+            In Case of Emergency
+          </h3>
+          <div class="flex space-x-48">
+            <div class="mt-5 font-medium lg:w-48">
+              <p>John Doe</p>
+              <div class="mt-5">
+                <h3 class="text-green-600 font-semibold">Home Phone</h3>
+                <p class="text-sm font-medium">092189332</p>
+              </div>
+            </div>
+            <div class="mt-5">
+              <div>
+                <p class="text-sm font-medium">143 Paghanapin Street</p>
+                <p class="text-sm font-medium">Pantok Binangonan</p>
+                <p class="text-sm font-medium">Canada</p>
+              </div>
+              <div class="mt-5">
+                <h3 class="text-green-600 font-semibold">Work Phone</h3>
+                <p class="text-sm font-medium">0928713542</p>
+              </div>
+            </div>
+          </div>
+          <!-- caseas -->
+          <h3
+            class="text-xl font-semibold text-red-500 mt-5 pb-3 border-b border-red-500"
+          >
+            General Medical History
+          </h3>
         </div>
-        <div class="flex mt-20 justify-center">
-          <div class="bg-black h-20 w-72 mx-10 my-5"></div>
-          <div class="bg-black h-20 w-72 mx-10 my-5"></div>
-          <div class="bg-black h-20 w-72 mx-10 my-5"></div>
+        <div class="flex lg:space-x-48 mt-5">
+          <div>
+            <h3 class="text-green-600 font-semibold">
+              Chicken Pox (Varicella):
+            </h3>
+            <p class="bg-slate-300 py-2 px-4 w-32 text-sm text-center mt-2">
+              NOT IMMUNE
+            </p>
+          </div>
+          <div>
+            <h3 class="text-green-600 font-semibold">Measles{Varicella}:</h3>
+            <p class="bg-slate-300 py-2 px-4 w-32 text-sm text-center mt-2">
+              NOT IMMUNE
+            </p>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-green-600 font-semibold mt-5">
+            Have you had the Hepatitis B vaccination?
+          </h3>
+          <p class="bg-slate-300 py-2 px-4 w-20 text-sm text-center mt-2">NO</p>
+        </div>
+        <div class="pb-10 border-b border-green-500">
+          <h3 class="text-green-600 font-semibold mt-5">
+            List any Medical Problems (asthma, seizures, headache):
+          </h3>
+          <p class="text-sm mt-2">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+            sit nemo sapiente. Repudiandae facilis repellat neque dolorem,
+            eveniet porro ipsam!
+          </p>
+        </div>
+        <div class="mt-5">
+          <h3 class="text-green-600 font-semibold mt-5">
+            Name of Insurance Comapany
+          </h3>
+          <div class="flex lg:spce-x-48 space-x-20">
+            <p class="text-sm mt-2 w-96">Lorem ipsum dolor sit,</p>
+            <div>
+              <p class="text-sm mt-2 w-96">456 Forbes Park</p>
+              <p class="text-sm mt-2 w-96">Barangay Makati</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
