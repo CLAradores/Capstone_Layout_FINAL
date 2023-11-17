@@ -113,3 +113,14 @@ nav {
     height: 15rem;
   }
 }
+
+#login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: rgb(244, 244, 244);
+  background-size: cover;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
